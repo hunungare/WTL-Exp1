@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div>
+<table>
+	<tbody>
+		<tr>
+			<td>
+				<h3>States of Karnataka</h3><br>
+<a href="javascript:gul()">Gulbarga</a><br>
+<a href="javascript:bid()">Bidar</a><br>
+			</td>
+			<td>
+				<div hidden id="gulID">
+	Welcome to Gulbarga!
+</div>
+
+<div hidden id="bidID">
+	Welcome to Bidar!
+</div>
+<div id="defID">
+	Select the city!
+</div>
+</td>
+		</tr>
+	</tbody>
+</table>
+	
+</div>
+<script type="text/javascript">
+	function gul()
+	{
+		//document.getElementById("gulID").removeAttribute("class");	
+		document.getElementById("bidID").setAttribute("hidden","");
+		document.getElementById("defID").setAttribute("hidden","");
+		document.getElementById("gulID").removeAttribute("hidden");
+	}
+
+	function bid()
+	{
+			document.getElementById("gulID").setAttribute("hidden","");
+		document.getElementById("defID").setAttribute("hidden","");
+		document.getElementById("bidID").removeAttribute("hidden","");
+	}
+	
+</script>
+</body>
+</html>
